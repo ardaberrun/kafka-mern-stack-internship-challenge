@@ -6,6 +6,6 @@ const sleep = (milliseconds) => {
   do {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
-}
+};
 
-module.exports = sleep
+module.exports = sleep;

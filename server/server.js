@@ -5,21 +5,18 @@ const io = require("socket.io")(http);
 
 const cors = require("cors");
 
-const connectDatabase = require('./connect-database');
-const emitDatabase = require('./helper/emit-database');
-const createLog = require('./helper/create-log');
+const connectDatabase = require("./connect-database");
+const emitDatabase = require("./helper/emit-database");
+const createLog = require("./helper/create-log");
 
-const {consumer} = require('./helper/kafka/event');
+const { consumer } = require("./helper/kafka/events");
 
 const PORT = 5000;
 
-
-
-connectDatabase()
+connectDatabase();
 
 app.use(express.json());
 app.use(cors());
-
 
 consumer();
 
@@ -47,13 +44,9 @@ app.delete("/", async (req, res) => {
   res.json({ ok: true });
 });
 
-
-
 http.listen(PORT, () => {
   console.log(`server is up: http://localhost:${PORT}`);
 });
-
-
 
 let interval;
 

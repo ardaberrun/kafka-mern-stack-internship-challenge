@@ -8,7 +8,7 @@ const base64ToText = (dirName) => {
     let fileName = file;
     let buff = Buffer.from(fileName, "base64");
     let text = buff.toString("ascii");
-    
+
     fs.renameSync(`${dirName}/${file}`, `${dirName}/${text}.txt`);
   });
 };

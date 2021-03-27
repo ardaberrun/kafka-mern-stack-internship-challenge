@@ -17,17 +17,15 @@ const producer = async (api_log) => {
     await producer.disconnect();
   } catch (e) {
     console.log(e);
-  } 
-}
-
-
+  }
+};
 
 const consumer = async () => {
   try {
     const consumer = kafka.consumer({
       groupId: "logs",
     });
-  
+
     await consumer.connect();
 
     await consumer.subscribe({
@@ -37,18 +35,18 @@ const consumer = async () => {
 
     await consumer.run({
       eachMessage: async (result) => {
-        const {type,responseTime,timestamp} =await JSON.parse(result.message.value);
+        const { type, responseTime, timestamp } = await JSON.parse(
+          result.message.value
+        );
         console.log(`Burdayim: ${type},${responseTime},${timestamp}`);
-        const log = new Log({type,responseTime,timestamp});
+        const log = new Log({ type, responseTime, timestamp });
 
-        await log.save()
-      
+        await log.save();
       },
     });
   } catch (e) {
     console.log(e);
   }
-}
+};
 
-
-module.exports= {producer,consumer}
+module.exports = { producer, consumer };
