@@ -39,6 +39,12 @@ http://localhost:3000  -> client
 http://localhost:5000  -> server
 
 ```
+---
+**KÜÇÜK NOT**
+
+Önyüz'de grafiği x-ekseninde 6 dakikalık zaman dilimlerine böldüm. Bu yüzden proje ilk çalıştırıldığında grafiğin x-axis'inde hiçbir şey görünmeyebilir.
+
+---
 
 # API
 
