@@ -1,4 +1,4 @@
-## Proje Açıklama
+## Kartaca Staj Görevi Proje Açıklama
 
 Bu projede API'ye gelen isteklerin canlı olarak grafik üzerinden takip edilmesi amaçlandı. Bu projede MERN Stack, Chartjs, Socket.io ve Kafka kullanılmıştır.
 
