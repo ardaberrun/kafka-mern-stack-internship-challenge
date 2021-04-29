@@ -1,4 +1,4 @@
-## Kartaca Staj Görevi Proje Açıklama
+## Proje Açıklama
 
 Bu projede API'ye gelen isteklerin canlı olarak grafik üzerinden takip edilmesi amaçlandı. Bu projede MERN Stack, Chartjs, Socket.io ve Kafka kullanılmıştır.
 
@@ -55,8 +55,4 @@ http://localhost:5000  -> server
 | http://localhost:5000/ | `PUT` | Empty | 
 | http://localhost:5000/ | `DELETE` | Empty | 
 
-
-## Özel Anahtar Kodu
-
-gAAAAABgUNSnACLkJ3IJy2BCx5Sv2sgh9KzTbqw1LbYaX4_m0TFaXgMxEJD2H6e_chxi-kfHzG-_m6NDt4MIpeMUjQQu-m1F-sG1c8Ets_UGCaUfvGfjGyOijCpMOMXPqZeGaYrs24VVRiFn94T-xEPRhdynmR7FKwr1c5EmyaAbFFNwqtWsLEu65JZBARTu58vzd1TF012c
 
